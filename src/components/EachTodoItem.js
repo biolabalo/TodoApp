@@ -56,7 +56,7 @@ const EachTodoItem = memo(({ id, title, dueDate, isCompleted, isDeleted, dateCom
         <div className="col-md-2">
           <span className="icons-fontawesome">
             <Link to={`/edit-todo/${id}`}><FontAwesomeIcon icon={faPencilAlt} className="mr-2" /></Link>
- {isDeleted ?            <FontAwesomeIcon 
+ {isDeleted ? <FontAwesomeIcon 
             icon={faRecycle} 
             className="ml-2 mr-2"
             onClick={()=> restoreTodo(id)} /> : <FontAwesomeIcon 

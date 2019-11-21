@@ -3,7 +3,7 @@ import { ListGroup } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import EachTodoItem from "./EachTodoItem";
 
-const Completed = () => {
+const Completed = ({ history }) => {
   const completedTodos = useSelector(state =>
     state.todos.filter(eachTodo => eachTodo.isCompleted && !eachTodo.isDeleted)
   );
@@ -29,5 +29,6 @@ const Completed = () => {
     </>
   );
 };
+
 
 export default Completed;

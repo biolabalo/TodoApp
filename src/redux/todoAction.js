@@ -2,7 +2,7 @@ export const addTodo = (data, dispatch, history) => {
     dispatch({ type: "ADD_TODOS", payload: data });
     return history.push("/");
   };
-  
+
   export const markTodoAsCompleted = (id, dispatch, isCompleted) => {
     // eslint-disable-next-line no-lone-blocks
     {
