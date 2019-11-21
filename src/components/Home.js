@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <section>
+      <section className="pending_todos">
         <div className="mt-3 mb-2">
           {!pendingTodos || !pendingTodos.length ? (
             <small>No pending todo's</small>
