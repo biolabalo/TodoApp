@@ -8,29 +8,6 @@ export default function(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case "FECTH_TODOS_LOADING":
-      return {
-        ...state,
-        isLoading: true,
-        isLoginError: false
-      };
-    case "FECTH_TODOS_SUCCESS":
-      return {
-        ...state,
-        token: payload,
-        isAuthenticated: true,
-        isLoading: false,
-        isLoginError: false
-      };
-
-    case "FECTH_TODOS_FAIL":
-      return {
-        ...state,
-        token: null,
-        isAuthenticated: false,
-        isLoading: false,
-        isLoginError: true
-      };
     case "ADD_TODOS":
       return {
         ...state,
