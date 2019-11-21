@@ -1,13 +1,68 @@
-body {
+body{
+  /* font-family: 'Open Sans', sans-serif; */
+  background: #cc95c0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 20px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App{
+  max-width: 900px;
+  margin: 0px auto;
+  width: 100%;
 }
+
+.icons-fontawesome{
+  float: right !important;
+}
+
+.component-container{
+    width: 100%;
+    max-width: 850px;
+    padding: 15px;
+    margin: auto;
+    overflow: scroll;
+    margin-top: 50px;
+    background-color: white;
+    height: 500px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.form-check:hover{
+  cursor: pointer !important;
+}
+
+.icons-fontawesome{
+  cursor: pointer;
+}
+
+span > svg.svg-inline--fa.fa-trash.fa-w-14.ml-2.mr-2 > path:hover{
+fill: red
+}
+svg.svg-inline--fa.fa-pencil-alt.fa-w-16.mr-2> path:hover{
+  fill: green
+  }
+
+  @media screen and (max-width: 767px) {
+   .icons-fontawesome{
+     float: left !important;
+   }
+
+   .no-gutters div {
+    margin-top:15px !important;
+}
+
+  }
+
+
+  @media screen and (max-width: 991px) {
+    .navbar-nav li{
+      margin-left: 0px !important;
+    }
+   }
+ 
