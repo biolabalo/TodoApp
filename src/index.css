@@ -11,6 +11,7 @@ body{
   position: relative;
 }
 
+
 .App{
   max-width: 900px;
   margin: 0px auto;
@@ -59,10 +60,17 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16.mr-2> path:hover{
 
   }
 
+  .navbar-nav li a{
+    color: yellow;
+    text-decoration: none;
+  }
 
   @media screen and (max-width: 991px) {
     .navbar-nav li{
-      margin-left: 0px !important;
+      margin: 0 auto !important;
+      margin-top: 20px !important;
+      font-size: 20px;
+      text-decoration: none;
     }
    }
  
