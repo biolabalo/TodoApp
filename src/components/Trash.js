@@ -18,9 +18,9 @@ const Trash = () => {
             <>
              <h3 className="text-center">{deletedTodos.length} <span className="ml-2">Deleted Todo's</span></h3>
             <ListGroup variant="flush">
-              {deletedTodos.map(({ id, ...otherTodoProps }) => (
-                <EachTodoItem key={id} id={id} {...otherTodoProps} />
-              ))}
+              {deletedTodos.map(({ id, ...otherTodoProps }, index) => {
+                return (<EachTodoItem key={index} id={id} {...otherTodoProps} />);
+              })}
             </ListGroup>
             </>
           )}

@@ -18,8 +18,11 @@ const Home = () => {
             <>
 <h3 className="text-center">{pendingTodos.length} <span className="ml-2">Pending Todo's</span></h3>
             <ListGroup variant="flush">
-              {pendingTodos.map(({ id, ...otherTodoProps }) => (
-                <EachTodoItem key={id} id={id} {...otherTodoProps} />
+              {pendingTodos.map(({ id, ...otherTodoProps }, index) => (
+                <EachTodoItem 
+                 key={index}
+                 id={id} 
+                 {...otherTodoProps} />
               ))}
             </ListGroup>
             </>

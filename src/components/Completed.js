@@ -18,9 +18,9 @@ const Completed = ({ history }) => {
             <>
             <h3 className="text-center">{completedTodos.length} <span className="ml-2">Completed Todo's</span></h3>
             <ListGroup variant="flush">
-              {completedTodos.map(({ id, ...otherTodoProps }) => (
-                <EachTodoItem key={id} id={id} {...otherTodoProps} />
-              ))}
+              {completedTodos.map(({ id, ...otherTodoProps },index) => {
+                return (<EachTodoItem key={index} id={id} {...otherTodoProps} />);
+              })}
             </ListGroup>
             </>
           )}
