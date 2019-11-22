@@ -16,15 +16,15 @@ const Home = () => {
             <small>No pending todo's</small>
           ) : (
             <>
-<h3 className="text-center">{pendingTodos.length} <span className="ml-2">Pending Todo's</span></h3>
-            <ListGroup variant="flush">
-              {pendingTodos.map(({ id, ...otherTodoProps }, index) => (
-                <EachTodoItem 
-                 key={index}
-                 id={id} 
-                 {...otherTodoProps} />
-              ))}
-            </ListGroup>
+              <h3 className="text-center">
+                {pendingTodos.length}{" "}
+                <span className="ml-2">Pending Todo's</span>
+              </h3>
+              <ListGroup variant="flush">
+                {pendingTodos.map(({ id, ...otherTodoProps }, index) => (
+                  <EachTodoItem key={index} id={id} {...otherTodoProps} />
+                ))}
+              </ListGroup>
             </>
           )}
         </div>
