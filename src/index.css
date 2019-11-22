@@ -74,3 +74,11 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16.mr-2> path:hover{
     }
    }
  
+
+   .form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: .3125rem;
+    margin-left: 0;
+    cursor: pointer !important;
+}
